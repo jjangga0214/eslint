@@ -171,7 +171,7 @@ describe("cli", () => {
             });
         });
 
-        describe.only("when there is a local config file", () => {
+        describe("when there is a local config file", () => {
 
             it(`should load the local config file with configType:${configType}`, async () => {
                 await cli.execute("lib/cli.js", null, useFlatConfig);
